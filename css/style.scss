@@ -1,0 +1,95 @@
+%vertical-align{
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+%layer-style{
+  background-color: rgba(0, 0, 0, .6);
+  border-radius: 3px;
+  padding: 10px 20px;
+  color: #fff;
+}
+
+h1{
+	font-family: 'Lobster', cursive;
+}
+
+h2,h3,h4,p,li{
+	font-family: 'Raleway', sans-serif;
+}
+
+body{
+	text-align: center;
+}
+
+.nav-wrapper{
+	padding: 10px;
+	margin: 20px;
+
+	.titlewrapper{
+		padding: 10px 20px;
+	
+		h1{
+			font-size: 30px;
+			margin:0px;
+			}
+	}
+
+	ul{
+		list-style: none;
+		position: relative;
+		margin: 0px;
+		right: 10px;
+		float: right;
+		
+
+		li{
+			font-size: 25px;
+			display: inline-block;
+			padding: 10px 20px;
+		}
+	}
+}
+
+.main{
+	height: 750px;
+	background: url("../img/parryphoto8.jpg") 100% top fixed;
+	background-size: cover;
+	margin:0px;
+
+	.banner{
+		position: relative;
+		display: inline-block;
+		@extend %vertical-align;
+		@extend %layer-style;
+
+		h2{
+			font-size: 40px;
+			margin:0px;
+		}
+	}
+}
+
+
+footer{
+	position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+	background-color: black;
+	color: white;
+	height: 150px;
+
+	.footer-wrapper{
+		padding: 35px;
+
+		.address{
+			padding: 10px 10px;
+		}
+
+	}
+}
+
+
